@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const List = ({ setShowSidebar }) => {
   const [food_list, setFoodList] = useState([]);
 
-  const backendURL = "http://localhost:4000";
+  const backendURL = "https://food-delivery-website-e-commerce-backend.onrender.com";
 
   // ✅ Fetch Food List
   const fetchFoodList = async () => {
