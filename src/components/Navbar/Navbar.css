@@ -1,0 +1,94 @@
+/* ============================
+   ADMIN NAVBAR
+============================ */
+.admin-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  gap: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(18, 4, 67);
+}
+
+.admin-navbar .title {
+  color: blue;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* ============================
+   LOGO IMAGE
+============================ */
+.admin-navbar .restaurant-logo img {
+  height: 120px;
+  width: 300px;
+  cursor: pointer;
+  border: 2px solid blue;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.admin-navbar .restaurant-logo img:hover {
+  transform: scale(1.05);
+}
+
+/* ============================
+   RESPONSIVE MEDIA QUERIES
+============================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .admin-navbar {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .admin-navbar .title {
+    font-size: 18px;
+  }
+
+  .admin-navbar .restaurant-logo img {
+    height: 100px;
+    width: 250px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .admin-navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .admin-navbar .title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .admin-navbar .restaurant-logo img {
+    height: 80px;
+    width: 200px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .admin-navbar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px 10px;
+  }
+
+  .admin-navbar .title {
+    font-size: 14px;
+  }
+
+  .admin-navbar .restaurant-logo img {
+    height: 60px;
+    width: 150px;
+  }
+}

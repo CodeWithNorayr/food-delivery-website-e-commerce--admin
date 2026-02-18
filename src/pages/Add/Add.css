@@ -1,0 +1,162 @@
+/* ============================
+   FORM CONTAINER
+============================ */
+.conatiner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+
+  width: 100%;
+  padding: 20px;
+}
+
+/* ============================
+   LABEL TITLES
+============================ */
+.food-name h1,
+.food-price h1,
+.food-description h1,
+.food-category h1 {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: rgb(90, 90, 149);
+  margin-bottom: 8px;
+}
+
+/* Upload Title */
+.image-upload label h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: rgb(90, 90, 149);
+}
+
+/* ============================
+   INPUTS + SELECT + TEXTAREA
+============================ */
+.food-name input,
+.food-price input,
+.food-description textarea,
+.food-category select {
+  width: 100%;
+  max-width: 400px; /* prevents huge size on desktop */
+  height: 45px;
+
+  border: 2px solid blue;
+  border-radius: 14px;
+
+  padding: 0 15px;
+
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Textarea fix */
+.food-description textarea {
+  height: 90px;
+  padding: 12px 15px;
+  resize: none;
+}
+
+/* Focus effect */
+.food-name input:focus,
+.food-price input:focus,
+.food-description textarea:focus,
+.food-category select:focus {
+  border-color: rgb(60, 60, 200);
+  box-shadow: 0px 0px 8px rgba(60, 60, 200, 0.4);
+}
+
+/* ============================
+   CATEGORY OPTIONS
+============================ */
+.food-category select option {
+  font-size: 15px;
+}
+
+/* ============================
+   ADD BUTTON
+============================ */
+.food-add-btn button {
+  width: 100%;
+  max-width: 200px;
+  height: 45px;
+
+  margin-top: 15px;
+
+  background: rgb(48, 48, 131);
+  color: white;
+
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+
+  border: none;
+  border-radius: 14px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.food-add-btn button:hover {
+  background-color: rgb(56, 56, 180);
+  transform: scale(1.05);
+}
+
+/* ============================
+   RESPONSIVE BREAKPOINTS
+============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .image-upload label h1 {
+    font-size: 20px;
+  }
+
+  .food-name h1,
+  .food-price h1,
+  .food-description h1,
+  .food-category h1 {
+    font-size: 16px;
+  }
+
+  .food-name input,
+  .food-price input,
+  .food-description textarea,
+  .food-category select {
+    max-width: 320px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .conatiner-section {
+    padding: 15px;
+    gap: 18px;
+  }
+
+  .image-upload label h1 {
+    font-size: 18px;
+  }
+
+  .food-name input,
+  .food-price input,
+  .food-description textarea,
+  .food-category select {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .food-add-btn button {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,115 @@
+/* ============================
+   SIDEBAR SECTIONS
+============================ */
+
+/* General container styles */
+.add-items,
+.list-items,
+.order-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  margin: 20px 0;
+}
+
+/* ============================
+   HEADINGS
+============================ */
+.add-items .add-h1,
+.list-items .list-h1,
+.order-items .order-h1 {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 18px; /* default large size */
+  color: blue;
+  margin-top: 20px;
+}
+
+/* ============================
+   IMAGES
+============================ */
+.add-items .add-image,
+.list-items .list-image,
+.order-items .order-image {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgb(3, 3, 75);
+}
+
+.add-items .add-image:hover,
+.list-items .list-image:hover,
+.order-items .order-image:hover {
+  transform: scale(1.05);
+}
+
+/* ============================
+   RESPONSIVE MEDIA QUERIES
+============================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .add-items .add-h1,
+  .list-items .list-h1,
+  .order-items .order-h1 {
+    font-size: 16px;
+  }
+
+  .add-items .add-image,
+  .list-items .list-image,
+  .order-items .order-image {
+    height: 90px;
+    width: 180px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .add-items,
+  .list-items,
+  .order-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .add-items .add-h1,
+  .list-items .list-h1,
+  .order-items .order-h1 {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .add-items .add-image,
+  .list-items .list-image,
+  .order-items .order-image {
+    height: 80px;
+    width: 150px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .add-items .add-h1,
+  .list-items .list-h1,
+  .order-items .order-h1 {
+    font-size: 12px;
+  }
+
+  .add-items .add-image,
+  .list-items .list-image,
+  .order-items .order-image {
+    height: 70px;
+    width: 130px;
+  }
+
+  .add-items,
+  .list-items,
+  .order-items {
+    gap: 10px;
+  }
+}

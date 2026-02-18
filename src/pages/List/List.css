@@ -1,0 +1,123 @@
+/* ============================
+   TABLE HEADER
+============================ */
+.table-context {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1.5fr 1fr 1fr;
+  gap: 20px;
+
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+
+  color: rgb(16, 16, 130);
+
+  padding: 12px;
+  border-bottom: 2px solid rgba(0, 0, 255, 0.2);
+}
+
+
+/* ============================
+   TABLE ROWS
+============================ */
+.context .context-data {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1.5fr 1fr 1fr;
+  gap: 20px;
+
+  text-align: center;
+  align-items: center;
+
+  margin: 20px 0;
+  padding: 15px;
+
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+
+  color: rgb(16, 16, 130);
+
+  background: #f9f9ff;
+  border-radius: 14px;
+  box-shadow: 0px 2px 8px rgba(204, 14, 14, 0.08);
+}
+
+
+/* ============================
+   IMAGE STYLE
+============================ */
+.context .context-data img {
+  height: 55px;
+  width: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: auto;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 14);
+}
+
+
+/* ============================
+   RESPONSIVE: TABLET
+============================ */
+@media (max-width: 1024px) {
+  .table-context,
+  .context .context-data {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .context .context-data img {
+    height: 50px;
+    width: 80px;
+  }
+}
+
+
+/* ============================
+   RESPONSIVE: MOBILE (SCROLL)
+============================ */
+@media (max-width: 768px) {
+  .table-context {
+    display: none; /* hide header on mobile */
+  }
+
+  .context .context-data {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 18px;
+    gap: 10px;
+  }
+
+  .context .context-data img {
+    width: 100%;
+    max-width: 250px;
+    height: 140px;
+    margin: auto;
+  }
+
+  /* Make each value look like a label */
+  .context .context-data div,
+  .context .context-data p,
+  .context .context-data span {
+    font-size: 14px;
+    word-break: break-word;
+  }
+}
+
+
+/* ============================
+   RESPONSIVE: SMALL MOBILE
+============================ */
+@media (max-width: 480px) {
+  .context .context-data {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .context .context-data img {
+    max-width: 100%;
+    height: 120px;
+  }
+}

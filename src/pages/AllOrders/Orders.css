@@ -1,0 +1,216 @@
+/* ============================
+   ORDERS PAGE CONTAINER
+============================ */
+.orders-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  font-family: sans-serif;
+}
+
+
+/* ============================
+   BACK BUTTON
+============================ */
+.orders-container button {
+  width: fit-content;
+  padding: 10px 18px;
+
+  background: rgb(30, 30, 90);
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.orders-container button:hover {
+  background: rgb(60, 60, 140);
+  transform: scale(1.05);
+}
+
+
+/* ============================
+   EMPTY MESSAGE
+============================ */
+.orders-container p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
+
+
+/* ============================
+   ORDER CARD
+============================ */
+.order-card {
+  background: #ffffff;
+  border-radius: 18px;
+
+  padding: 20px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+
+  transition: 0.25s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* ============================
+   ORDER ITEMS SECTION
+============================ */
+.order-items {
+  flex: 2;
+}
+
+.order-items h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: rgb(20, 20, 100);
+}
+
+
+/* ============================
+   SINGLE ITEM CARD
+============================ */
+.order-item {
+  background: #f8f8ff;
+  border-left: 4px solid rgb(50, 50, 180);
+
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-item p {
+  font-size: 14px;
+  margin: 0;
+  color: #222;
+}
+
+
+/* ============================
+   ORDER INFO SECTION
+============================ */
+.order-info {
+  flex: 1;
+
+  background: rgb(245, 245, 255);
+  border-radius: 14px;
+
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-weight: 700;
+  color: rgb(30, 30, 110);
+}
+
+.order-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* ============================
+   RESPONSIVE: TABLETS
+============================ */
+@media (max-width: 1024px) {
+  .order-card {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .order-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .order-item {
+    font-size: 13px;
+  }
+}
+
+
+/* ============================
+   RESPONSIVE: MOBILE
+============================ */
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 15px;
+  }
+
+  .orders-container button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-items h4 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .order-item {
+    padding: 10px;
+  }
+
+  .order-item p {
+    font-size: 13px;
+  }
+
+  .order-info {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+
+/* ============================
+   RESPONSIVE: SMALL PHONES
+============================ */
+@media (max-width: 480px) {
+  .order-card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .order-item {
+    border-left: none;
+    border-top: 3px solid rgb(50, 50, 180);
+  }
+
+  .order-item p {
+    font-size: 12px;
+  }
+
+  .order-info p {
+    font-size: 12px;
+  }
+}
