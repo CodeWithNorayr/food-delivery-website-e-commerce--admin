@@ -6,7 +6,7 @@ import { toast } from 'react-toastify'
 
 const Add = ({ setShowSidebar }) => {
   const [image, setImage] = useState(null)
-  const backendURL = 'http://localhost:4000'
+  const backendURL = 'https://food-delivery-website-e-commerce-backend.onrender.com'
   const [data, setData] = useState({
     name: '',
     description: '',
