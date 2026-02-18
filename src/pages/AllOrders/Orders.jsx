@@ -7,7 +7,7 @@ const Orders = ({ setShowSidebar }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const backendURL = "http://localhost:4000";
+  const backendURL = "https://food-delivery-website-e-commerce-backend.onrender.com";
 
   // ✅ Fetch Orders
   const fetchAllOrders = async () => {
